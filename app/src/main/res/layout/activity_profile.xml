@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4663AC"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/vComponentTopbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/component_topbar"
+        />
+
+    <TextView
+        android:id="@+id/tvLabelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Halaman Profile"
+        android:textColor="#ffffff"
+        />
+
+    <ImageView
+        android:id="@+id/ivHanni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/hnni2"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ivHanni"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#ffffff"
+        android:text="Name : Hanni "
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#ffffff"
+        android:text="Email: Hanni@gmail.com "
+        />
+
+    <TextView
+        android:id="@+id/tvHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textColor="#ffffff"
+        android:text="Hobby: Singing "
+        />
+
+    <View
+        android:id="@+id/vBar"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvHobby"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#cecece"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/vBar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#FF0000"
+        android:text="Logout"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

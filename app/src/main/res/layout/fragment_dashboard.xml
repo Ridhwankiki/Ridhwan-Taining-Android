@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="Fragment Dashboard"-->
+<!--        android:textSize="24dp"-->
+<!--        android:textAlignment="center"-->
+<!--        />-->
+    <include
+        android:id="@+id/componentHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/component_dashboard_header"/>
+
+    <include
+        app:layout_constraintTop_toBottomOf="@id/componentHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/componentMenu"
+        layout="@layout/fragment_menu_dashboard"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

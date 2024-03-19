@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/hnni2"
+        android:layout_marginBottom="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="40dp"
+        android:textColor="#4663AC"
+        android:gravity="center"
+        android:text="Login Page" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Email Here" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/passLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password Here.."
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:id="@+id/cbShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:textSize="18sp"
+        android:textColor="#454545"
+        android:layout_gravity="start"
+        android:layout_marginLeft="10pt"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <View
+        android:layout_width="370dp"
+        android:layout_height="1dp"
+        android:background="#cecece"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Register Here!"
+        android:textColor="#4663AC"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#4663AC"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+
+
+
