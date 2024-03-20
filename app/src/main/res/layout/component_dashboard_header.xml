@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="10dp"
-    android:background="#10C2DA">
+    android:background="@drawable/gradient_background">
 
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -26,7 +27,6 @@
         android:layout_marginTop="12dp">
 
         <LinearLayout
-            android:id="@+id/llSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
@@ -41,25 +41,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Cari Disini"
+                android:layout_marginStart="4dp"
                 android:background="@null"/>
 
         </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/llSearch"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Assalamualaikum"
-            />
-    </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivCall"
@@ -70,7 +58,14 @@
         app:layout_constraintTop_toTopOf="@+id/cvSearchContainer"
         app:layout_constraintBottom_toBottomOf="@+id/cvSearchContainer"/>
 
-
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/cvSearchContainer"
+        app:layout_constraintTop_toBottomOf="@+id/cvSearchContainer"
+        android:text="Assalamualaikum, Starling"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

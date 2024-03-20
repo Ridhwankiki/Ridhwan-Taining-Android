@@ -1,27 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical">
 
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:text="Fragment Dashboard"-->
-<!--        android:textSize="24dp"-->
-<!--        android:textAlignment="center"-->
-<!--        />-->
-    <include
-        android:id="@+id/componentHeader"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        layout="@layout/component_dashboard_header"/>
+        android:layout_height="match_parent">
 
-    <include
-        app:layout_constraintTop_toBottomOf="@id/componentHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/componentMenu"
-        layout="@layout/fragment_menu_dashboard"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <include
+                android:id="@+id/componentHeader"
+                layout="@layout/component_dashboard_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/componentMenu"
+                layout="@layout/fragment_menu_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <include
+                android:id="@+id/componentAccountNumber"
+                layout="@layout/component_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--        <include-->
+<!--            android:id="@+id/componentHeader"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            layout="@layout/component_dashboard_header"/>-->
+
+<!--        <include-->
+<!--            app:layout_constraintTop_toBottomOf="@id/componentHeader"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/componentMenu"-->
+<!--            layout="@layout/fragment_menu_dashboard"/>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
