@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bdp.bcasyariah.R
 import com.bdp.bcasyariah.databinding.ActivityLoginBinding
 import com.bdp.bcasyariah.utils.SharePrefHelper
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.UUID
 
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
 
     private  lateinit var binding: ActivityLoginBinding
@@ -52,7 +54,8 @@ class LoginActivity : AppCompatActivity() {
             if(binding.emailLogin.text.isEmpty().not() && binding.passLogin.text.isEmpty().not()) {
                 val token = UUID.randomUUID().toString()
                 sharePref.saveToken(token)
-                handleRegister()
+//                handleRegister()
+                handleDashboard()
             } else {
                 showToast("Email atau Password Anda Salah!")
 //                Toast.makeText(this,"Tolong Lengkapi Email dan Password Anda")
@@ -79,6 +82,11 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun handleRegister() {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun handleDashboard(){
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
     }

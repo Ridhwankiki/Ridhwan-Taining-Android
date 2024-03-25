@@ -78,11 +78,11 @@
     <TextView
         android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="12dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:text="Register Here!"
-        android:textColor="#4663AC"
-        android:layout_gravity="center_horizontal" />
+        android:textColor="#4663AC" />
 
     <TextView
         android:layout_width="wrap_content"

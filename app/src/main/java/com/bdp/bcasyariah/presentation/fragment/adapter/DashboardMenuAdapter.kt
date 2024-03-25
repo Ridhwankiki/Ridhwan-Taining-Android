@@ -8,10 +8,11 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.bdp.bcasyariah.R
+import com.bdp.bcasyariah.model.MenuDashboard
 import com.bdp.bcasyariah.model.MenuDashboardModel
 
 class DashboardMenuAdapter(
-    private val menuData: List<MenuDashboardModel>,
+    private val menuData: List<MenuDashboard>,
     private val context: Context
 ) : BaseAdapter() {
 
@@ -48,9 +49,8 @@ class DashboardMenuAdapter(
         val resultMenu = menuData[position]
 
         //ini berfungsi untuk melakukan set pada masing masing komponen di layout
-        image?.setImageResource(resultMenu.image)
-        textMenu?.text = resultMenu.menuName
-
+//        image?.setImageResource(resultMenu.image)
+        textMenu?.text = resultMenu.nameMenu
         return bindingView
     }
 
